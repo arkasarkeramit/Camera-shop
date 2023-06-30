@@ -36,7 +36,8 @@ video {
 .navigation {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 90px 120px;
+  margin: 90px 120px 50px;
+  align-items: center;
 }
 
 .nav-title {
@@ -56,4 +57,57 @@ video {
   font-weight: 600;
   font-size: 16px;
   color: #3a3a3a;
+}
+
+/* -------Influencer section------- */
+
+.topweb {
+  background-image: url(../images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  height: 100vh;
+  margin-right: 132px;
+}
+
+.topweb-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  max-width: 580px;
+  margin-left: 120px;
+}
+
+.content-title {
+  color: #3a3a3a;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.content-p {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 16px;
+  padding-right: 85px;
+}
+
+.btn {
+  border-radius: 41px;
+  background: #e02c6d;
+  padding: 10px 24px;
+  border: 0px;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.btn i {
+  padding: 8px;
 }
