@@ -306,3 +306,37 @@ video {
   font-weight: 700;
   padding-top: 5px;
 }
+
+@media only screen and (max-width: 915px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .navigation {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    grid-gap: 5px;
+  }
+
+  .nav-title {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+
+  .nav-option ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+  }
+
+  .nav-option li {
+    margin-left: 0px;
+  }
+}
