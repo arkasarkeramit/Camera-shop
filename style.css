@@ -248,3 +248,27 @@ video {
 .icon {
   color: rgba(224, 44, 109, 0.87);
 }
+
+/* -----Feature Section---- */
+
+.feature {
+  display: flex;
+  margin-top: 125px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 100px;
+}
+
+.feature-content {
+  max-width: 650px;
+}
+
+.feature-content .content-title {
+  color: #0a0826;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.feature-content .btn {
+  border-radius: 5px;
+}
