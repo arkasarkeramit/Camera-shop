@@ -129,7 +129,7 @@ video {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding-right: 30px;
+  padding: 10px;
 }
 
 .h {
