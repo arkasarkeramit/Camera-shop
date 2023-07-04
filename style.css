@@ -378,7 +378,8 @@ video {
   }
 
   .content .btn {
-    margin: 20px 19%;
+    margin: 0 auto;
+    display: block;
   }
 
   /* ------Logo Section----- */
@@ -443,16 +444,17 @@ video {
     font-weight: 700;
   }
 
-  .content-p {
+  .feature-content .content-p {
     font-size: 1em;
     margin-bottom: 1.5vh;
-    padding: 0px;
+    padding: 15px;
     text-align: center;
   }
 
   .feature-content .btn {
     border-radius: 5px;
-    margin-left: 30%;
+    display: block;
+    margin: 0 auto;
   }
 
   /* -----Footer Tag------ */
