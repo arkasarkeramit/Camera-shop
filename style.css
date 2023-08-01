@@ -66,6 +66,20 @@ video {
   color: #3a3a3a;
 }
 
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
 /* -------Influencer section------- */
 
 .topweb {
@@ -321,9 +335,10 @@ video {
 
   .navigation {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 10px 1fr;
     margin: 0;
     grid-gap: 5px;
+    grid-auto-flow: column;
   }
 
   .nav-title {
@@ -332,15 +347,45 @@ video {
     padding-right: 0px;
   }
 
-  .nav-option ul {
-    display: flex;
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
     flex-direction: column;
-    align-items: center;
-    gap: 1vh;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
   }
 
   .nav-option li {
     margin-left: 0px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    grid-column: 1;
+    justify-self: self-start;
+    margin-left: 10px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   /* -------Influencer section------- */
